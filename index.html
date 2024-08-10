@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O jogo da velha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="main">
+        <div class="players">
+            <div class="player1 active">Jogador 1 (x) : <span class="points"></span></div>
+            <div class="player2">Jogador 2 (o) : <span class="points"></span></div>
+        </div>
+        <div class="game"></div>
+        <div class="buttons">
+            <div class="config">
+                <input type="radio" name="option" id="player" checked>
+                <label for="player">Jogador</label>
+                <input type="radio" name="option" id="computer">
+                <label for="computer">Computador</label>
+                <button class="newGame">Novo Jogo</button>
+            </div>
+            <button class="reset">Reiniciar</button>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
