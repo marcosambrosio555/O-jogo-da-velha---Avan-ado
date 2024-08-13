@@ -46,6 +46,7 @@ function resetFunction() {
     btns.forEach((btn) => {
         btn.value = ""
         btn.style.color = "transparent"
+        btn.classList.remove("animation")
     })
 }
 
@@ -142,9 +143,9 @@ function verification(a, b, c) {
         btns[b].value === "O" &&
         btns[c].value === "O"
     ) {
-        btns[a].style.color = "#393"
-        btns[b].style.color = "#393"
-        btns[c].style.color = "#393"
+        btns[a].classList.add("animation")
+        btns[b].classList.add("animation")
+        btns[c].classList.add("animation")
         reset.style.display = "block"
         if (data.player1) {
             data.player2Points++

@@ -4,7 +4,6 @@
     box-sizing: border-box;
     border: none;
     outline: none;
-    font-weight: 100;
     font-family: sans-serif;
 }
 
@@ -47,7 +46,6 @@ label {
     background-color: #444;
     text-align: center;
     font-size: 9rem;
-    font-family: cursive;
     color: transparent;
     cursor: pointer;
     transition: .4s opacity;
@@ -73,9 +71,9 @@ label {
     border-radius: .4rem;
     padding: .8rem 1rem;
     font-weight: 900;
-    font-family: cursive;
-    color: #666;
+    color: #444;
     transition: .4s;
+    font-size: 1.4rem;
 }
 
 .players div.active {
@@ -128,4 +126,44 @@ button.newGame:hover {
 
 .reset:hover {
     background-color: #611;
+}
+
+
+
+@media screen and (max-width : 414px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media screen and (max-width : 375px) {
+    html {
+        font-size: 45%;
+    }
+}
+
+.game input.animation {
+    animation: winnerAnimation .2s infinite;
+}
+
+@keyframes winnerAnimation {
+    0% {
+        color: yellow;
+    }
+
+    30% {
+        color: orange;
+    }
+
+    60% {
+        color: orangered;
+    }
+
+    90% {
+        color: red;
+    }
+
+    100% {
+        color: white;
+    }
 }
